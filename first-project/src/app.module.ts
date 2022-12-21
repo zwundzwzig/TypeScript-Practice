@@ -1,12 +1,10 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { QatarWorldCupService } from './qatarWorldCup/qatar-world-cup.service';
-import { QatarWorldCupController } from './qatarWorldCup/qatar-world-cup.controller';
+import { MoviesController } from './movies/movies.controller';
+import { MoviesService } from './movies/movies.service';
 
 @Module({
   imports: [],
-  controllers: [AppController, QatarWorldCupController],
-  providers: [AppService, QatarWorldCupService],
+  controllers: [MoviesController],
+  providers: [MoviesService],
 })
 export class AppModule {}
